@@ -1,0 +1,18 @@
+.DashoardDivide{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+
+/* Navbar */
+.Sidenav{
+  height: 695px;
+  width: 250px;
+  background-color: rgb(6, 106, 123);
+  color: white;
+  padding: 10px;
+}
+.aside h1{
+  text-align: center;
+}
