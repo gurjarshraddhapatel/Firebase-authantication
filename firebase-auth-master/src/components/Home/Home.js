@@ -11,6 +11,10 @@ function Home(props) {
       <div>
         <h1>This is DashBoard</h1>
         <h2 className=''>{props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
+        <div className='row'>
+          <div className='col-6'>Shraddha</div>
+          <div className='col-6'>Patel</div>
+        </div>
       </div>
     </div>
   );
