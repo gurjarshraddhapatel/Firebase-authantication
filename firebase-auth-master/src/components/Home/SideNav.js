@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+
 // import { Link } from "react-router-dom";
 const SideNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -189,10 +191,15 @@ const SideNav = () => {
 
 
   <section className="home-section">
-     <div className="home-content" onClick={toggleSidebar}>
+     {/* <div className="home-content" onClick={toggleSidebar}>
           <i className={`bx ${isOpen ? 'bx-x' : 'bx-menu'}`} />
           <span className="text">X<i class="fa-solid fa-bars"></i> </span>
-      </div>
+      </div> */}
+      <div className="home-content" onClick={toggleSidebar}>
+  
+  <span className="text"> <FontAwesomeIcon icon={isOpen ? faTimes : faBars} /></span>
+</div>
+
   </section>
   <div className="" />
 
